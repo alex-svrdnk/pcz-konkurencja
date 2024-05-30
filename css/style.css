@@ -269,15 +269,15 @@ h1 {
 }
 
 .chief {
-    background-image: url(./assets/chief.jpg);
+    background-image: url(/assets/chief.jpg);
 }
 
 .sous-chief {
-    background-image: url(./assets/sous-chief.jpg);
+    background-image: url(/assets/sous-chief.jpg);
 }
 
 .aliosha {
-    background-image: url(./assets/aliosha.png);
+    background-image: url(/assets/aliosha.png);
 }
 
 .teamMember {
