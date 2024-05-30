@@ -268,7 +268,7 @@ h1 {
     -moz-box-shadow: 7px 12px 76px -3px rgba(0, 0, 0, 0.9);
 }
 
-.chief {
+/* .chief {
     background-image: url(/assets/chief.jpg);
 }
 
@@ -278,7 +278,7 @@ h1 {
 
 .aliosha {
     background-image: url(/assets/aliosha.png);
-}
+} */
 
 .teamMember {
     display: flex;
