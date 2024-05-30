@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&family=Teko:wght@300..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --mainColor: #0b8491;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.whiteText {
+    color: #fff;
+}
+
+.blackText {
+    color: #000;
+}
+
+nav {
+    max-width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    padding: 50px;
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+
+#logoRef {
+    color: white;
+    font-size: 40px;
+    font-family: Teko;
+}
+
+.navLogo a::before {
+    content: '\f3a5';
+    margin-right: 15px;
+    font-family: FontAwesome;
+}
+
+.navItems {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 30px;
+}
+
+.navItems a:hover {
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* header */
+
+.header {
+    position: relative;
+    height: 50vh;
+}
+
+.bgVideo {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.bgVideo video {
+    width: 100%;
+    filter: blur(5px);
+}
+
+.headerInfos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Oswald;
+}
+
+#headerIcon {
+    font-size: 150px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+
+.headerInfos h2 {
+    font-size: 30px;
+}
+
+.headerInfos p {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.emailButton {
+    border: none;
+    border-radius: 25px;
+    height: 60px;
+    width: 250px;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--mainColor);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.emailButton:hover {
+    cursor: pointer;
+    box-shadow: 7px 12px 76px -3px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 7px 12px 76px -3px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 7px 12px 76px -3px rgba(0, 0, 0, 0.9);
+    transition: 0.5s ease-in-out
+}
+
+
+/* menu */
+
+.menuBlock {
+    width: 100%;
+    height: 700px;
+    border-top: 7px solid var(--mainColor);
+    text-align: center;
+    position: relative;
+}
+
+.menuBlock h2 {
+    margin: 70px;
+    font-size: 30px;
+    font-family: Oswald, sans-serif;
+    position: relative;
+}
+
+.menuBlock h2::before {
+    content: '';
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    right: 0;
+    position: absolute;
+
+}
+
+.menuCarousel {
+    width: 1170px;
+    margin: auto;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: var(--mainColor);
+    margin-top: 40px;
+}
+
+.menuItem {
+    position: relative;
+}
+
+.menuItemDescription {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    text-align: start;
+    backdrop-filter: blur(5px);
+    font-family: Oswald;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menuItemDescription h3 {
+    font-size: 25px;
+    padding: 14px;
+}
+
+.menuItemDescription p {
+    font-size: 15px;
+    margin: 9px;
+}
+
+.menuItem:hover .menuItemDescription {
+    opacity: 1;
+}
+
+/* our team */
+
+.ourTeam {
+    background-color: var(--mainColor)
+}
+
+
+.ourTeam h2 {
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: Oswald, sans-serif;
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+.ourTeam h2::before {
+    content: '';
+    width: 70px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ourTeam h2>span {
+    font-size: 30px;
+}
+
+.teamBlock {
+    /* height: 500px; */
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+}
+
+.avatar {
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px auto;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.3);
+    box-shadow: 7px 12px 76px -3px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 7px 12px 76px -3px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 7px 12px 76px -3px rgba(0, 0, 0, 0.9);
+}
+
+.chief {
+    background-image: url(/assets/chief.jpg);
+}
+
+.sous-chief {
+    background-image: url(/assets/sous-chief.jpg);
+}
+
+.aliosha {
+    background-image: url(/assets/aliosha.png);
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 700px;
+    width: 400px;
+    font-family: "Smooch Sans";
+}
+
+.teamMember h3 {
+    font-size: 40px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.teamMember h4 {
+    font-size: 30px;
+    margin: 5px;
+    font-weight: 600;
+}
+
+.teamMember p {
+    font-size: 19px;
+}
+
+/* contact us */
+.contactSection {
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+}
+
+.contactSection h2 {
+    font-size: 40px;
+}
+
+.contactItems {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.contactItems ul {
+    border: 2px solid black;
+    border-top: none;
+    list-style: none;
+    margin: 80px;
+}
+
+.contactItems ul>li {
+    margin: 20px;
+    font-size: 40px;
+    font-family: "Ubuntu Sans";
+    font-weight: 100;
+    transition: color 0.3s ease;
+}
+
+.contactItems ul>li:hover{
+    color: var(--mainColor);
+}
+
+.contactItems ul>li>a:hover{
+    color: var(--mainColor);
+}
+
+.beforeList::before{
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+.adressList::before{
+    content: '\f3c5';
+}
+
+.emailList::before{
+    content: '\f0e0';
+}
