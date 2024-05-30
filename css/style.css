@@ -173,6 +173,10 @@ h1 {
     margin: auto;
 }
 
+.menuItem img{
+    border-radius: 15px;
+}
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background-color: var(--mainColor);
